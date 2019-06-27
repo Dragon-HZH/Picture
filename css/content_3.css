@@ -1,0 +1,88 @@
+/*第三部分独立属性*/
+#content_4_section3{
+	height: 200px;
+	width: 400px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#content_4_section3 img{
+	width: 400px;
+	height: 220px;
+	position: absolute;
+	top: -20px;
+	left: 0;
+}
+#content_4bg_1_section3{
+	background: linear-gradient(136deg,rgba(255,95,30,.7) 50%,rgba(247,188,77,.7) 70%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 40px;
+}
+#content_4bg_1_section3:hover{
+	background:transparent;	
+	animation-name: gradient_section3;
+	animation-duration: .3s;
+	animation-timing-function: linear;
+}
+/*线性颜色渐变动画*/
+@-webkit-keyframes gradient_section3{
+	0%{
+		background:linear-gradient(136deg,rgba(255,95,30,.7) 50%,rgba(247,188,77,.7) 70%);
+	}
+	25%{
+		background:linear-gradient(136deg,rgba(242,122,77,.6) 50%,rgba(247,188,77,.6) 70%);
+	}
+	50%{
+		background:linear-gradient(136deg,rgba(242,122,77,.4) 50%,rgba(247,188,77,.4) 70%);
+	}
+	75%{
+		background:linear-gradient(136deg,rgba(242,122,77,.2) 50%,rgba(247,188,77,.2) 70%);
+	}
+	100%{
+		background:linear-gradient(136deg,rgba(242,122,77,.1) 50%,rgba(247,188,77,.1) 70%);
+	}
+}
+#content_4bg_1_section3 p{
+	font-size: 8px;
+}
+#content_4bg_1_section3 h3{
+	margin-bottom: 20px;
+}
+
+#content_6_section3{
+	height: 200px;
+	width: 400px;
+	position: absolute;
+	top: 400px;
+	left: 200px;
+}
+#content_6_section3 img{
+	width: 400px;
+}
+#content_6bg_1_section3 p{
+	font-size: 8px;
+}
+#content_6bg_1_section3 h3{
+	margin-bottom: 20px;
+}
+#content_6bg_1_section3{
+	background:rgba(90,120,80,.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	-webkit-transition: all 1s;
+	box-sizing: border-box;
+	padding-top: 40px;
+}
+#content_6bg_1_section3:hover{
+	background: rgba(90,120,80,.1);
+}

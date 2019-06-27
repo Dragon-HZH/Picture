@@ -1,0 +1,143 @@
+/*动画*/
+#content_lf6 img{
+	width: 60px;
+	height: 60px;
+	}
+#content_lf6_right img{
+	width: 60px;
+	height: 60px;
+	}
+		#stage_right_2{
+				/*border: 1px solid #000;*/
+				margin: 50px auto;
+				perspective: 1200px;
+				width: 100px;
+				height: 100px;
+				position: fixed;
+				bottom: 30px;
+				right: 30px;
+				-webkit-perspective: 1200px;
+			}
+		#stage_right_1{
+				/*border: 1px solid #000;*/
+				margin: 50px auto;
+				perspective: 1200px;
+				width: 100px;
+				height: 100px;
+				position: fixed;
+				top: 275px;
+				left: 30px;
+				-webkit-perspective: 1200px;
+			}
+		#stage_right{
+				/*border: 1px solid #000;*/
+				margin: 50px auto;
+				perspective: 1200px;
+				width: 100px;
+				height: 100px;
+				position: fixed;
+				top: 30px;
+				right: 30px;
+				-webkit-perspective: 1200px;
+			}
+			#content_lf6_right{
+				width: 60px;
+				height: 60px;
+				margin: 0 auto;
+				/*border: 1px solid red;*/
+				/*转化为3D容器*/
+				transform-style: preserve-3d;
+				/*X轴旋转*/
+				/*transform: rotateX(50deg) rotateY(50deg) translateY(0px) translateY(0px);*/
+				/*相对定位*/
+				position: relative;
+				
+				animation-name: run_1;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				animation-direction:alternate;
+				
+				-webkit-animation-name: run_1;
+				-webkit-animation-duration:5s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+				-webkit-animation-direction:alternate;
+			}
+			#content_lf6_right:hover{
+				animation-play-state:paused;
+			}
+			#content_lf6_right div{
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: .9;
+			}
+			#m1_1{
+				transform: rotateY(0deg) translateZ(30px);
+				background: red;
+			}
+			#m2_1{
+				transform: rotateX(90deg) rotateY(0deg) translateZ(30px);
+				background:yellow;
+			}
+			#m3_1{
+				transform: rotateY(90deg) translateZ(30px);
+				background: darkcyan;
+			}
+			#m4_1{
+				transform: rotateY(180deg) translateZ(30px);
+				background: plum;
+			}
+			#m5_1{
+				transform: rotateX(-90deg) rotateY(0deg) translateZ(30px);
+				background:peru;
+			}
+			#m6_1{
+				transform: rotateY(270deg) translateZ(30px);
+				background:blueviolet;
+			}
+			@-webkit-keyframes run_1{
+				0%{
+					transform:rotateX(0deg)  rotateY(0deg);
+				}
+				16%{
+					transform:rotateX(0deg) rotateY(-90deg);
+				}
+				32%{
+					transform:rotateX(0deg) rotateY(-180deg);
+				}
+				49%{
+					transform:rotateX(0deg) rotateY(-270deg);
+				}
+				66%{
+					transform:rotateX(90deg) rotateY(-360deg);
+				}
+				83%{transform:rotateX(180deg) rotateY(-360deg); }
+				100%{
+					transform:rotateX(270deg)  rotateY(-360deg);
+				}
+			
+			@keyframes run_1{
+				0%{
+					transform:rotateX(0deg)  rotateY(0deg);
+				}
+				16%{
+					transform:rotateX(0deg) rotateY(-90deg);
+				}
+				32%{
+					transform:rotateX(0deg) rotateY(-180deg);
+				}
+				49%{
+					transform:rotateX(0deg) rotateY(-270deg);
+				}
+				66%{
+					transform:rotateX(90deg) rotateY(-360deg);
+				}
+				83%{transform:rotateX(180deg) rotateY(-360deg); }
+				100%{
+					transform:rotateX(270deg)  rotateY(-360deg);
+				}
+				
